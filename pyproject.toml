@@ -1,5 +1,5 @@
 [project]
-name = "cli-app"
+name = "typer_app"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -7,11 +7,13 @@ authors = [
     { name = "Cedric Anderson Jr", email = "CTANDERSON2@Anderson.edu" }
 ]
 dependencies = [
+    "fastapi>=0.128.0",
     "typer>=0.21.0",
+    "uvicorn>=0.40.0",
 ]
 
 [project.scripts]
-typer-app = "typer-app:main"
+typer_app = "typer_app.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.8.17,<0.9.0"]
